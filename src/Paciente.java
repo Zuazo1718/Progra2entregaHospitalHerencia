@@ -1,23 +1,13 @@
 import java.util.Date;
 
-public class Paciente {
+public class Paciente extends Persona{
     private String cosPaciente;
-    private String nombre;
-    private String primerApellido;
-    private String segundoApellido;
-    private String dni;
-    private Date fechaNacimiento;
     private String numeroSeguridadSicioal;
 
     //mrtodo constructor
 
     public Paciente(String cosPaciente, String nombre, String primerApellido, String segundoApellido, String dni, Date fechaNacimiento, String numeroSeguridadSicioal) {
-        this.setCosPaciente(cosPaciente);
-        this.setNombre(nombre);
-        this.setPrimerApellido(primerApellido);
-        this.setSegundoApellido(segundoApellido);
-        this.setDni(dni);
-        this.setFechaNacimiento(fechaNacimiento);
+       super(nombre,primerApellido,segundoApellido, dni ,fechaNacimiento);
         this.setNumeroSeguridadSicioal(numeroSeguridadSicioal);
     }
 
@@ -41,45 +31,6 @@ public class Paciente {
         this.cosPaciente = cosPaciente;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getPrimerApellido() {
-        return primerApellido;
-    }
-
-    public void setPrimerApellido(String primerApellido) {
-        this.primerApellido = primerApellido;
-    }
-
-    public String getSegundoApellido() {
-        return segundoApellido;
-    }
-
-    public void setSegundoApellido(String segundoApellido) {
-        this.segundoApellido = segundoApellido;
-    }
-
-    public String getDni() {
-        return dni;
-    }
-
-    public void setDni(String dni) {
-        this.dni = dni;
-    }
-
-    public Date getFechaNacimiento() {
-        return fechaNacimiento;
-    }
-
-    public void setFechaNacimiento(Date fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
-    }
 
     public String getNumeroSeguridadSicioal() {
         return numeroSeguridadSicioal;
